@@ -19,5 +19,6 @@
   "homepage": "https://github.com/patopitaluga/iot-openweather-serverless#readme",
   "dependencies": {
     "node-fetch": "^3.2.10"
-  }
+  },
+  "type": "module"
 }

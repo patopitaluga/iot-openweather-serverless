@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 if (!process.env.LAT) throw new Error('Missing LAT env variable.');
 if (!process.env.LON) throw new Error('Missing LON env variable.');
 if (!process.env.APIKEY) throw new Error('Missing APIKEY env variable.');
