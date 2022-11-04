@@ -1,0 +1,23 @@
+{
+  "name": "iot-openweather-serverless",
+  "version": "1.0.0",
+  "description": "Simple IoT serverless function",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patopitaluga/iot-openweather-serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patopitaluga/iot-openweather-serverless/issues"
+  },
+  "homepage": "https://github.com/patopitaluga/iot-openweather-serverless#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
+}
