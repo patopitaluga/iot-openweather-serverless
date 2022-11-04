@@ -29,3 +29,10 @@ Every time. Run:
 ```
 . ./setcreds.sh
 ```
+
+## Deploy
+
+```
+$ serverless deploy
+```
+
