@@ -9,6 +9,7 @@ module.exports.hello = async (event) => {
   // only two states: 'rain' or 'clear' to simplify client
   const stringResponse = weatherJson.weather[0].main.toLowerCase().includes('rain') ? 'rain' : 'clear';
 
+
   return {
     statusCode: 200,
     body: stringResponse,
