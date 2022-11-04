@@ -2,7 +2,6 @@
   "name": "iot-openweather-serverless",
   "version": "1.0.0",
   "description": "Simple IoT serverless function",
-  "main": "handler.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patopitaluga/iot-openweather-serverless.git"

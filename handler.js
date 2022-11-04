@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 
-module.exports.hello = async (event) => {
+export const hello = async (event) => {
   const a = await fetch(url)
     .catch((err) => { throw err; });
   // console.log(a.status);
