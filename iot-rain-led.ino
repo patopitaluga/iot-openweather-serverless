@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
-// #include <WiFiClient.h>
 
-#define LED2 D4
+// #define LED1 D4 // onboard led for nodemcu
+#define LED1 4 // gpio4 = pin D2
 
 const char* ssid = "";
 const char* password = "";
@@ -17,7 +17,7 @@ unsigned int free_heap_before = 0;
 unsigned int free_stack_before = 0;
 
 void setup() {
-  pinMode(LED2, OUTPUT); // LED pin as output.
+  pinMode(LED1, OUTPUT); // LED pin as output.
 
   Serial.begin(115200);
   Serial.flush();
@@ -63,9 +63,9 @@ void loop() {
         String payload = http.getString();
         // Serial.println(payload);
         if (payload == "rain") {
-          digitalWrite(LED2, LOW);
+          digitalWrite(LED1, HIGH);
         } else {
-          digitalWrite(LED2, HIGH);
+          digitalWrite(LED1, LOW);
         }
       }
     } else {

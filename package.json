@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/patopitaluga/iot-openweather-serverless.git"
   },
+  "scripts": {
+    "test": "node test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

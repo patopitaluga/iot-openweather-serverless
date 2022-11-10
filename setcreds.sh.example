@@ -1,3 +1,4 @@
 export APIKEY=
 export LAT=
 export LON=
+export SERVERLESS_FUNCTION_URL=

@@ -6,6 +6,14 @@ Simple IoT serverless function
 
 Serverless gives warning when using .env file so I've set the "setcreds" files as an alternative:
 
+### Install Serverless Framework
+
+For some reason, latest serverless framework versions are bugged. Created using v3.23.0.
+
+```
+npm install -g serverless@3.23.0
+```
+
 ### Windows
 
 First time. Create a **setcreds.bat** file using **setcreds.bat.example** as template.
@@ -34,4 +42,10 @@ Every time. Run:
 
 ```
 $ serverless deploy
+```
+
+## Test openweather fetch
+
+```
+$ npm run test
 ```
