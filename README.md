@@ -1,6 +1,10 @@
-# iot-openweather-serverless
+# IoT Smart Umbrella using nodemcu (esp8266) + serverless function.
 
-Simple IoT serverless function.
+IoT Project: Smart Umbrella serverless function.
+
+![](https://patopitaluga.github.io/iot-openweather-serverless/images/umbrella1.jpg)
+
+------
 
 Index:
 * [Setup](#setup)
