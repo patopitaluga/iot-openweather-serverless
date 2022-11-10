@@ -1,8 +1,15 @@
 # iot-openweather-serverless
 
-Simple IoT serverless function
+Simple IoT serverless function.
 
-## Setup
+Index:
+* [Setup](#setup)
+* [Deploy](#deploy)
+* [Test](#test)
+
+------
+
+## <a name="setup"></a> Setup
 
 Serverless gives warning when using .env file so I've set the "setcreds" files as an alternative:
 
@@ -38,13 +45,17 @@ Every time. Run:
 . ./setcreds.sh
 ```
 
+------
+
 ## Deploy
 
 ```console
 serverless deploy
 ```
 
-## Test openweather fetch
+------
+
+## Test
 
 ```console
 npm run test
