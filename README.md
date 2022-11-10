@@ -15,8 +15,6 @@ Index:
 
 ## <a name="setup"></a> Setup
 
-Serverless gives warning when using .env file so I've set the "setcreds" files as an alternative:
-
 ### Install Serverless Framework
 
 For some reason, latest serverless framework versions are bugged. Created using v3.23.0.
@@ -25,7 +23,11 @@ For some reason, latest serverless framework versions are bugged. Created using 
 npm install -g serverless@3.23.0
 ```
 
-### Windows
+### Set variables to dev and test in local environment
+
+Serverless gives warning when using .env file so I've set the "setcreds" files as an alternative:
+
+#### Windows
 
 First time. Create a **setcreds.bat** file using **setcreds.bat.example** as template.
 
@@ -35,7 +37,7 @@ Every time. Run:
 setcreds
 ```
 
-### Mac
+#### Mac
 
 First time. Create a **setcreds.sh** file using **setcreds.sh.example** as template.
 
@@ -55,6 +57,14 @@ Every time. Run:
 
 ```console
 serverless deploy
+```
+
+------
+
+## Log serverless function
+
+```console
+serverless logs -f hello
 ```
 
 ------
