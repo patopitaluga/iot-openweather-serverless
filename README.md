@@ -10,6 +10,7 @@ Index:
 * [Setup](#setup)
 * [Deploy](#deploy)
 * [Test](#test)
+* [Components](#components)
 
 ------
 
@@ -53,7 +54,7 @@ Every time. Run:
 
 ------
 
-## Deploy
+## <a name="deploy"></a> Deploy
 
 ```console
 serverless deploy
@@ -61,7 +62,15 @@ serverless deploy
 
 ------
 
-## Log serverless function
+## <a name="test"></a> Test
+
+Test access to openweather api and to serverless funcion.
+
+```console
+npm run test
+```
+
+Log serverless function.
 
 ```console
 serverless logs -f hello
@@ -69,8 +78,35 @@ serverless logs -f hello
 
 ------
 
-## Test
+## <a name="components"></a> Components
 
-```console
-npm run test
+- Nodemcu
+- Resistor 220 ohm
+- Led
+
+```
+       ┌───────────────────┐
+       │O                 O│
+       │                   │
+       │o A0           D0 o│
+       ├─ RSV          D1 o│
+       │o RSV          D2 o├───┐
+       │o SD3          D3 o│   │
+       │o SD2          D4 o│   │
+       │o SD1         3V3 o│   S Resistor 220 ohm
+       │o CMD         GND o│   │
+       │o SD0          D5 o│   │
+       │o CLK          D6 o│   │
+       │o GND          D7 o│   ▼ Led
+       │o 3V3          D8 o│   │
+       │o EN           RX o│   │
+       │o RST          TX o│   │
+       │o GND         GND o├───┘
+       │o Vin         3V3 o│
+       │                   │
+       │  RST         FLA  │
+       │   @ ┌───────┐ @   │
+       │O    │       │    O│
+       └─────┤       ├─────┘
+             └───────┘
 ```
