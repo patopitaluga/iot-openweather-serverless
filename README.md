@@ -93,11 +93,11 @@ serverless logs -f hello
        │o RSV          D2 o├───┐
        │o SD3          D3 o│   │
        │o SD2          D4 o│   │
-       │o SD1         3V3 o│   S Resistor 220 ohm
+       │o SD1         3V3 o│   ▼ Led S
        │o CMD         GND o│   │
        │o SD0          D5 o│   │
        │o CLK          D6 o│   │
-       │o GND          D7 o│   ▼ Led
+       │o GND          D7 o│   Resistor 220 ohm
        │o 3V3          D8 o│   │
        │o EN           RX o│   │
        │o RST          TX o│   │
