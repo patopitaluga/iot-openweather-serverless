@@ -89,7 +89,6 @@ NodeMCU / ESP8266
 
        ┌─────────────────────┐
        │ O                 O │
-       │                     │
        │o A0             D0 o│
        ├─ RSV            D1 o│
        │o RSV            D2 o├────┐
@@ -99,13 +98,12 @@ NodeMCU / ESP8266
        │o CMD           GND o│    │ (short leg)
        │o SD0            D5 o│    │
        │o CLK            D6 o│    │
-       │o GND            D7 o│    Resistor 220 ohm
+       │o GND            D7 o│    R Resistor 220 ohm
        │o 3V3            D8 o│    │ (no polarity | either direction)
        │o EN             RX o│    │
        │o RST            TX o│    │
        │o GND           GND o├────┘
        │o Vin           3V3 o│
-       │                     │
        │   RST         FLA   │
        │    @ ┌───────┐ @    │
        │ O    │       │    O │
